@@ -140,6 +140,48 @@ export function Footer() {
           </div>
         </div>
       </div>
+
+      {/* Payment methods bar */}
+      <div className="border-t border-white/10 bg-black/20">
+        <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center gap-3">
+          <span className="text-white/60 text-xs whitespace-nowrap">Medios de pago:</span>
+          <div className="flex flex-wrap items-center justify-center gap-2">
+            {/* Visa */}
+            <div className="h-8 w-14 bg-[#1A1F71] rounded-md flex items-center justify-center">
+              <span className="text-white font-extrabold italic text-sm tracking-widest select-none" style={{ fontFamily: 'Arial, sans-serif' }}>VISA</span>
+            </div>
+            {/* Mastercard */}
+            <div className="h-8 w-14 bg-[#1A1A1A] rounded-md flex items-center justify-center relative overflow-hidden">
+              <div className="absolute left-2 w-5 h-5 rounded-full bg-[#EB001B]" />
+              <div className="absolute right-2 w-5 h-5 rounded-full bg-[#F79E1B] opacity-90" />
+            </div>
+            {/* Amex */}
+            <div className="h-8 w-14 bg-[#007BC1] rounded-md flex items-center justify-center">
+              <span className="text-white font-bold text-[10px] tracking-widest select-none" style={{ fontFamily: 'Arial, sans-serif' }}>AMEX</span>
+            </div>
+            {/* Mercado Pago */}
+            <div className="h-8 px-2 bg-[#009EE3] rounded-md flex items-center gap-1.5">
+              <img src="/mercadopago.png" alt="" className="h-5 w-5 object-contain" />
+              <span className="text-white text-[10px] font-bold select-none whitespace-nowrap" style={{ fontFamily: 'Arial, sans-serif' }}>Mercado Pago</span>
+            </div>
+            {/* Naranja X */}
+            <div className="h-8 w-16 bg-[#FF5C00] rounded-md flex items-center justify-center">
+              <span className="text-white font-bold text-[10px] tracking-wide select-none" style={{ fontFamily: 'Arial, sans-serif' }}>NARANJA X</span>
+            </div>
+            {/* Cabal */}
+            <div className="h-8 w-14 bg-[#003082] rounded-md flex items-center justify-center">
+              <span className="text-white font-bold text-[11px] tracking-wide select-none" style={{ fontFamily: 'Arial, sans-serif' }}>CABAL</span>
+            </div>
+            {/* Transferencia */}
+            <div className="h-8 px-3 bg-white/15 rounded-md flex items-center gap-1.5 border border-white/20">
+              <span className="text-white text-[10px] font-medium select-none whitespace-nowrap">🏦 Transferencia</span>
+            </div>
+          </div>
+          <div className="sm:ml-auto flex items-center gap-1.5 text-white/40 text-[10px] whitespace-nowrap">
+            🔒 Pago seguro con SSL
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }
