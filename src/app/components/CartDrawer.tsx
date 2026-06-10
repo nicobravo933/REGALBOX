@@ -41,7 +41,10 @@ function MercadoPagoBadge({ large = false }: { large?: boolean }) {
     );
   }
   return (
-    <img src="/mercadopago.png" alt="Mercado Pago" className="h-7 w-auto object-contain rounded flex-shrink-0" />
+    <div className="h-7 px-2 bg-[#009EE3] rounded flex items-center gap-1.5 flex-shrink-0">
+      <img src="/mercadopago.png" alt="" className="h-4 w-4 object-contain" />
+      <span className="text-white text-[10px] font-bold whitespace-nowrap select-none" style={{ fontFamily: 'Arial, sans-serif' }}>Mercado Pago</span>
+    </div>
   );
 }
 
