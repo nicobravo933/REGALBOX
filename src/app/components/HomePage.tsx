@@ -84,7 +84,7 @@ function Hero() {
 					</button>
 				</div>
 				{/* Stats */}
-				<div className="flex gap-3 mt-24 md:mt-9 flex-wrap">
+				<div className="flex gap-2 mt-24 md:mt-9 md:flex-wrap">
 					{[
 						{ value: "2.4k+", label: "Regalos entregados" },
 						{ value: "180+", label: "Productos" },
@@ -92,7 +92,7 @@ function Hero() {
 					].map((s) => (
 						<div
 							key={s.label}
-							className="rounded-xl px-4 py-3"
+							className="rounded-xl px-2 py-2 md:px-4 md:py-3 flex-1 md:flex-none"
 							style={{
 								background: "rgba(255,255,255,0.75)",
 								border: "1px solid rgba(139,61,69,0.15)",
@@ -103,15 +103,15 @@ function Hero() {
 								style={{
 									fontFamily: "var(--font-display)",
 									fontWeight: 700,
-									fontSize: "1.3rem",
+									fontSize: "clamp(0.95rem, 3vw, 1.3rem)",
 									color: "var(--primary)",
 								}}
 							>
 								{s.value}
 							</p>
 							<p
+								className="text-[10px] md:text-[0.72rem]"
 								style={{
-									fontSize: "0.72rem",
 									color: "var(--muted-foreground)",
 									marginTop: "2px",
 								}}
