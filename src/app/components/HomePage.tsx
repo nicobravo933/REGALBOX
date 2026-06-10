@@ -63,7 +63,7 @@ function Hero() {
 					Creamos experiencias únicas con flores, cajas personalizadas y más.
 					Para cada ocasión especial.
 				</p>
-				<div className="flex flex-col gap-3 md:flex-row md:flex-wrap">
+				<div className="flex flex-col items-start gap-3 md:flex-row md:flex-wrap">
 					<Link
 						to="/tienda"
 						className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-2xl font-semibold hover:opacity-90 transition-opacity shadow-md"
