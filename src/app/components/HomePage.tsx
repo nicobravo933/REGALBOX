@@ -16,7 +16,7 @@ import { products } from "./productsData";
 // ── Hero ──────────────────────────────────────────────────────────────────────
 function Hero() {
 	return (
-		<section className="relative overflow-hidden min-h-[520px] md:min-h-[600px] flex items-center">
+		<section className="relative overflow-hidden min-h-[520px] md:min-h-[600px] flex items-start md:items-center">
 			{/* Background image con overlay claro para mantener colores del diseño */}
 			<div className="absolute inset-0">
 				<img
@@ -28,7 +28,7 @@ function Hero() {
 			</div>
 
 			{/* Content */}
-			<div className="relative max-w-6xl mx-auto px-4 py-16 w-full">
+			<div className="relative max-w-6xl mx-auto px-4 pt-8 pb-6 md:py-16 w-full">
 				<span
 					className="inline-block text-xs font-semibold px-3 py-1 rounded-full mb-5 tracking-wide"
 					style={{ background: "var(--primary)", color: "white" }}
@@ -84,7 +84,7 @@ function Hero() {
 					</button>
 				</div>
 				{/* Stats */}
-				<div className="flex gap-3 mt-9 flex-wrap">
+				<div className="flex gap-3 mt-24 md:mt-9 flex-wrap">
 					{[
 						{ value: "2.4k+", label: "Regalos entregados" },
 						{ value: "180+", label: "Productos" },
