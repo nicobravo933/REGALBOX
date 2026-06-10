@@ -120,48 +120,6 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Payment methods */}
-      <div className="border-t border-white/10">
-        <div className="max-w-6xl mx-auto px-4 py-8">
-          <h4 style={{ fontFamily: 'var(--font-display)' }} className="text-white mb-5">Medios de pago</h4>
-          <div className="flex flex-wrap items-center gap-3">
-            {/* Visa */}
-            <div className="h-10 w-16 bg-[#1A1F71] rounded-lg flex items-center justify-center">
-              <span className="text-white font-extrabold italic text-base tracking-widest select-none" style={{ fontFamily: 'Arial, sans-serif' }}>VISA</span>
-            </div>
-            {/* Mastercard */}
-            <div className="h-10 w-16 bg-[#1A1A1A] rounded-lg flex items-center justify-center relative overflow-hidden">
-              <div className="absolute left-2.5 w-6 h-6 rounded-full bg-[#EB001B]" />
-              <div className="absolute right-2.5 w-6 h-6 rounded-full bg-[#F79E1B] opacity-90" />
-            </div>
-            {/* Amex */}
-            <div className="h-10 w-16 bg-[#007BC1] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xs tracking-widest select-none" style={{ fontFamily: 'Arial, sans-serif' }}>AMEX</span>
-            </div>
-            {/* Mercado Pago */}
-            <div className="h-10 px-3 bg-[#009EE3] rounded-lg flex items-center gap-2">
-              <img src="/mercadopago.png" alt="" className="h-6 w-6 object-contain" />
-              <span className="text-white text-xs font-bold select-none whitespace-nowrap" style={{ fontFamily: 'Arial, sans-serif' }}>Mercado Pago</span>
-            </div>
-            {/* Naranja X */}
-            <div className="h-10 w-20 bg-[#FF5C00] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xs tracking-wide select-none" style={{ fontFamily: 'Arial, sans-serif' }}>NARANJA X</span>
-            </div>
-            {/* Cabal */}
-            <div className="h-10 w-16 bg-[#003082] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xs tracking-wide select-none" style={{ fontFamily: 'Arial, sans-serif' }}>CABAL</span>
-            </div>
-            {/* Transferencia */}
-            <div className="h-10 px-4 bg-white/15 rounded-lg flex items-center gap-2 border border-white/20">
-              <span className="text-white text-xs font-medium select-none whitespace-nowrap">🏦 Transferencia bancaria</span>
-            </div>
-          </div>
-          <p className="text-white/50 text-xs mt-4 flex items-center gap-1.5">
-            🔒 Todas las transacciones están protegidas con encriptación SSL de 256 bits.
-          </p>
-        </div>
-      </div>
-
       {/* Google Maps */}
       <div className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-4 py-6">
