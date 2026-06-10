@@ -89,7 +89,7 @@ function Categories() {
   return (
     <section className="py-10 max-w-6xl mx-auto px-4">
       <p className="text-primary text-xs font-bold uppercase tracking-widest mb-1">Explorá</p>
-      <h2 className="text-foreground mb-6" style={{ fontFamily: 'var(--font-display)' }}>Regalos para cada ocasión</h2>
+      <h2 className="text-foreground mb-6" style={{ fontFamily: 'var(--font-display)' }}>Regalos para cada <span style={{ color: 'var(--primary)' }}>ocasión</span></h2>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {cats.map(cat => (
           <Link
@@ -155,7 +155,7 @@ function BestSellers() {
   return (
     <section className="py-10 max-w-6xl mx-auto px-4">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-foreground" style={{ fontFamily: 'var(--font-display)' }}>Los más elegidos</h2>
+        <h2 className="text-foreground" style={{ fontFamily: 'var(--font-display)' }}>Los más <span style={{ color: 'var(--primary)' }}>elegidos</span></h2>
         <div className="flex gap-2">
           <button
             type="button"
@@ -284,7 +284,7 @@ function Reviews() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-foreground" style={{ fontFamily: 'var(--font-display)' }}>
-            Lo que dicen nuestros clientes
+            Lo que dicen nuestros <span style={{ color: 'var(--primary)' }}>clientes</span>
           </h2>
           <div className="flex items-center justify-center gap-1 mt-2">
             {[1, 2, 3, 4, 5].map(n => (
@@ -376,7 +376,7 @@ function Nosotros() {
         <div>
           <p className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Nuestra historia</p>
           <h2 className="text-foreground mb-4" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.8rem, 4vw, 2.4rem)' }}>
-            Creamos regalos que emocionan
+            Creamos regalos que <span style={{ color: 'var(--primary)' }}>emocionan</span>
           </h2>
           <p className="text-muted-foreground mb-4 leading-relaxed">
             Somos un equipo apasionado de Buenos Aires dedicado a convertir cada regalo en una experiencia única.
