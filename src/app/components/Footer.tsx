@@ -42,7 +42,6 @@ export function Footer() {
           <p className="text-white/70 text-sm leading-relaxed">
             Creamos regalos únicos con flores y cajas personalizadas para cada ocasión especial.
           </p>
-          <p className="text-white/50 text-xs mt-3">© 2026 RegalBOX. Todos los derechos reservados.</p>
         </div>
 
         {/* Navigation */}
@@ -138,6 +137,16 @@ export function Footer() {
               referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="border-t border-white/10">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+          <p className="text-white/50 text-xs">© 2026 RegalBOX. Todos los derechos reservados.</p>
+          <span className="text-white/70 text-xs font-medium border border-white/30 rounded-full px-3 py-1">
+            Grupo 29
+          </span>
         </div>
       </div>
 
