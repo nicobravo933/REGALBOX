@@ -31,14 +31,18 @@ function AmexBadge() {
 }
 
 function MercadoPagoBadge({ large = false }: { large?: boolean }) {
+  if (large) {
+    return (
+      <img
+        src="/mercadopago.png"
+        alt="Mercado Pago"
+        className="h-14 object-contain"
+      />
+    );
+  }
   return (
-    <div className={`bg-[#009EE3] rounded-xl flex items-center justify-center gap-2 flex-shrink-0 ${large ? 'h-14 w-52 ' : 'h-7 px-2'}`}>
-      <svg width={large ? 22 : 14} height={large ? 22 : 14} viewBox="0 0 24 24" fill="white" aria-hidden="true">
-        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 3a7 7 0 110 14A7 7 0 0112 5zm-1.5 3v2H9v4h1.5v2h3v-2H15V10h-1.5V8h-3z"/>
-      </svg>
-      <span className={`text-white font-bold select-none ${large ? 'text-base' : 'text-[10px]'}`} style={{ fontFamily: 'Arial, sans-serif' }}>
-        Mercado Pago
-      </span>
+    <div className="h-7 px-1.5 bg-[#009EE3] rounded flex items-center justify-center flex-shrink-0">
+      <img src="/mercadopago.png" alt="Mercado Pago" className="h-4 object-contain" />
     </div>
   );
 }
